@@ -3,7 +3,10 @@ layout: default
 title: Documentation Continent - Renaissance Project
 ---
 
-# Documentation Continent - Renaissance Project
+<div style="text-align: center; margin-bottom: 30px;">
+  <h1 style="margin-bottom: 10px;">📜 Documentation Continent - Renaissance Project</h1>
+  <p style="font-style: italic; color: #666; font-size: 1.1em;">Refactorisation du projet Continent</p>
+</div>
 
 Documentation complète du projet Renaissance, refactorisation du projet Continent. Cette documentation décrit toutes les fonctionnalités du jeu, leurs règles métier, et leurs exigences techniques.
 

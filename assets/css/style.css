@@ -1,17 +1,101 @@
+/* Continent Theme - Adapted from projet.continent.free.fr */
+
+/* Base Styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background: url('../images/background.jpg') repeat;
+  background-color: #D6C6B5;
+  color: #333333;
+  font-size: 12px;
+  min-height: 100vh;
+  position: relative;
 }
 
+/* Continent Logo in top-left */
+.continent-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: transparent;
+}
+
+.continent-logo a {
+  display: block;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.continent-logo a:hover {
+  background: transparent;
+  padding: 0;
+}
+
+.logo-image {
+  display: block;
+  border: none;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Content Wrapper with Frame */
+.content-wrapper {
+  margin: 80px auto 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.content-frame {
+  background: url('../images/texture_parchemin2.jpg') repeat;
+  background-color: #F5E6D3;
+  position: relative;
+  /* Textured border images - 5px wide borders */
+  padding: 5px;
+  background-image: 
+    url('../images/border-top.gif'),
+    url('../images/border-bottom.gif'),
+    url('../images/border-left.gif'),
+    url('../images/border-right.gif'),
+    url('../images/texture_parchemin2.jpg');
+  background-repeat: 
+    repeat-x,
+    repeat-x,
+    repeat-y,
+    repeat-y,
+    repeat;
+  background-position: 
+    top left,
+    bottom left,
+    left top,
+    right top,
+    center;
+  background-size: 
+    auto 5px,
+    auto 5px,
+    5px auto,
+    5px auto,
+    auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Border images are now handled via background-image, no need for pseudo-elements */
+
+/* Navigation */
 .main-nav {
-  background: #2c3e50;
+  background: linear-gradient(to bottom, #112242 0%, #314985 100%);
   color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  border-bottom: 3px solid #5172B4;
+  margin-top: 70px;
+  position: relative;
+  z-index: 100;
 }
 
 .nav-container {
@@ -19,8 +103,9 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  min-height: 50px;
 }
 
 .nav-logo {
@@ -28,57 +113,97 @@ body {
   font-weight: bold;
   color: white;
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 0;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
-  color: white;
+  color: #7394D6;
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 11px;
+  border: 1px solid #5172B4;
+  background-color: transparent;
+  transition: all 0.3s;
+  margin-left: -1px;
 }
 
 .nav-links a:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: #336396;
+  color: #FCFCFC;
+  border-color: #5172B4;
 }
 
+/* Main Content */
 .main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0;
+  padding: 30px;
+  background: url('../images/texture_parchemin2.jpg') repeat;
+  background-color: #F5E6D3;
+  position: relative;
+  min-height: 400px;
 }
 
+/* Headings */
 h1 {
-  color: #2c3e50;
-  border-bottom: 3px solid #3498db;
+  font-family: "Times New Roman", Times, serif;
+  color: #335534;
+  border-bottom: 3px solid #8B7355;
   padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-top: 0;
 }
 
 h2 {
-  color: #34495e;
+  font-family: "Times New Roman", Times, serif;
+  color: #335534;
   margin-top: 30px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #8B7355;
   padding-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 h3 {
-  color: #34495e;
+  font-family: "Times New Roman", Times, serif;
+  color: #335534;
   margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
+/* Sections */
 .section {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   padding: 20px;
   margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #8B7355;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
 }
 
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #8B7355, transparent);
+}
+
+/* Lists */
 ul {
   list-style: none;
   padding: 0;
@@ -86,37 +211,45 @@ ul {
 
 li {
   padding: 8px 0;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(139, 115, 85, 0.3);
 }
 
 li:last-child {
   border-bottom: none;
 }
 
+/* Links */
 a {
-  color: #3498db;
+  color: #4364a6;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  font-weight: bold;
+  transition: all 0.2s;
 }
 
 a:hover {
-  color: #2980b9;
-  text-decoration: underline;
+  color: #FCFCFC;
+  background-color: #336396;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 .file-icon {
   margin-right: 8px;
-  color: #95a5a6;
+  color: #8B7355;
+  font-size: 1.1em;
 }
 
 .description {
-  color: #7f8c8d;
+  color: #666666;
   font-size: 0.9em;
   margin-left: 24px;
   margin-top: 4px;
+  font-style: italic;
 }
 
+/* Feature Grid */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -125,29 +258,47 @@ a:hover {
 }
 
 .feature-item {
-  background: #f8f9fa;
-  padding: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
   border-radius: 4px;
-  border-left: 3px solid #3498db;
+  border-left: 4px solid #5172B4;
+  border: 1px solid #8B7355;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-color: #5172B4;
 }
 
 .feature-item a {
-  font-weight: 500;
+  font-weight: bold;
+  color: #4364a6;
 }
 
+.feature-item a:hover {
+  color: #FCFCFC;
+}
+
+/* Footer */
 .main-footer {
-  background: #2c3e50;
+  background: linear-gradient(to bottom, #314985 0%, #112242 100%);
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  border-top: 3px solid #5172B4;
+  font-size: 11px;
 }
 
 .main-footer p {
   margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-/* Markdown content styling */
+/* Markdown Content Styling */
 .main-content h1:first-child {
   margin-top: 0;
 }
@@ -156,44 +307,134 @@ a:hover {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #8B7355;
 }
 
 .main-content table th,
 .main-content table td {
-  border: 1px solid #ddd;
+  border: 1px solid #8B7355;
   padding: 8px;
   text-align: left;
 }
 
 .main-content table th {
-  background-color: #3498db;
+  background: linear-gradient(to bottom, #5172B4, #314985);
   color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main-content table tr:nth-child(even) {
+  background: rgba(214, 198, 181, 0.3);
 }
 
 .main-content code {
-  background-color: #f4f4f4;
+  background-color: rgba(214, 198, 181, 0.5);
   padding: 2px 6px;
   border-radius: 3px;
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
+  border: 1px solid #8B7355;
+  color: #335534;
 }
 
 .main-content pre {
-  background-color: #f4f4f4;
+  background-color: rgba(214, 198, 181, 0.5);
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
+  border: 1px solid #8B7355;
 }
 
 .main-content pre code {
   background-color: transparent;
   padding: 0;
+  border: none;
 }
 
 .main-content blockquote {
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #5172B4;
   margin: 20px 0;
   padding-left: 20px;
-  color: #7f8c8d;
+  color: #666666;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 15px 15px 15px 25px;
+  border-radius: 0 4px 4px 0;
 }
 
+/* Decorative Elements - Removed from main-content, now on frame */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .continent-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .logo-image {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .main-nav {
+    margin-top: 0;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    width: 100%;
+    margin: 2px 0;
+  }
+  
+  .content-wrapper {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .content-frame {
+    border-width: 4px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-content {
+    padding: 15px;
+  }
+}
+
+/* Scrollbar Styling (Webkit browsers) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D6C6B5;
+  border: 1px solid #8B7355;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5172B4;
+  border: 1px solid #314985;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #336396;
+}

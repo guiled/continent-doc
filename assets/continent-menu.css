@@ -1,0 +1,167 @@
+/* Menus déroulants «Son of Suckerfish» */
+.suckerfish {
+  padding-left: 300px;
+}
+
+#images ul { /* toutes les listes */
+	display: block;
+	float: left;
+	list-style: none;
+	padding: 0em;
+	margin: 0 0.5em 0 0;
+	text-align: right;
+	font-size: 12px;
+	font-weight: normal
+}
+
+#images a {
+	display: block;
+	text-decoration: none;
+}
+
+#images li, #images .titre { /* tous les items de liste */
+  display: block;
+	float: left;
+	padding: 0.25em;
+	margin-right: 1.5em;
+  width: 7.5em; /* largeur obligatoire, sinon opera devient fou */
+  height:45px; /*les images font au plus cette taille*/
+}
+
+#images .logo {
+  width: 300px; /*taille de l'image*/
+  height: 55px; /*taille de l'image*/
+  margin: 0em;
+  border: none;
+  padding: 0em;
+}
+
+/*img.imagetitre{display:block;clear:both;margin-left:auto;margin-right:auto;text-align:center;position:relative;bottom:0em;} text-align pour IE*/
+#images .imagetitre {
+  height: 45px; /*les images font au plus cette taille*/
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width:7.75em;
+  margin:0;
+}
+
+#images .etatserv {
+  float: right;
+  padding: 0.25em 0.25em 0.25em 0;
+  height:45px;
+  width: 8.5em;
+  overflow: visible;
+  text-align: right;
+  margin: 0em;
+}
+
+#nav ul { /* toutes les listes */
+	display: block;
+	color: #7394D6;
+	float: left;
+	list-style: none;
+	line-height: 1;
+	padding: 0em;
+	margin: 0 0.5em 0 0;
+	text-align: left;
+	z-index: 999;
+}
+
+#nav ul li {
+	border: solid #5172B4;
+	border-width: 0.1em;
+	font-weight: bold;
+}
+
+#nav ul li ul {
+	border: solid #5172B4;
+	border-width: 0.1em;
+}
+
+#nav ul li ul li {
+	border: none;
+}
+
+#nav a {
+	display: block;
+	width: 13em;
+	color: #5172B4;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#nav a.daddy {
+	background: url(../pics/pucet.gif) center right no-repeat;
+	width: 14.5em;
+}
+
+#nav .titre {
+	font-weight: bold;
+  display: block;
+  color: white;
+  background-color: #7394D6 !important;
+  width: 7.5em;
+	font-size: 12px;
+}
+
+#nav .soustitre {
+	font-weight: bold;
+	color: white;
+	background-color: #7394D6 !important;
+	border-bottom: solid #5172B4 0.1em;
+	width: 13.15em;
+}
+
+#nav a.soustitre {
+	border-bottom: none;
+	font-size: 12px;
+}
+
+#nav li { /* tous les items de liste */
+	float: left;
+	padding: 0.25em;
+	margin-right: 1.5em;
+	width: 13.1em; /* largeur obligatoire, sinon opera devient fou */
+}
+
+#nav li ul { /* listes de deuxième niveau */
+	position: absolute;
+	left: -999em;  /* on met left plutôt que display pour cacher les menus parce que display: none n'est pas lu par les lecteurs d'écran */
+	height: auto;
+	width: 14.4em;
+	font-weight: normal;
+	border-width: 0.1em;
+	margin: 0.25em 0 0 -0.35em;
+	background: url(../pics/texture_parchemin.jpg);
+}
+
+#nav li li {
+	padding-right: 1em;
+	width: 13.1em;
+	margin-right: 0;
+}
+
+#nav li ul a {
+	width: 14.5em;
+}
+
+#nav li ul ul { /* listes de troisième niveau et plus */
+	margin: -1.4em 0 0.3em 12.75em;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+	background: orange;
+}
+
+#content {
+	clear: left;
+}

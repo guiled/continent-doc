@@ -7,9 +7,16 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <!-- Continent Logo in top-left -->
+  <div class="continent-logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo.gif' | relative_url }}" alt="CONTINENT" class="logo-image">
+    </a>
+  </div>
+
+  <!-- Navigation -->
   <nav class="main-nav">
     <div class="nav-container">
-      <a href="{{ '/' | relative_url }}" class="nav-logo">{{ site.title }}</a>
       <div class="nav-links">
         {% for item in site.navigation %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
@@ -18,9 +25,14 @@
     </div>
   </nav>
   
-  <main class="main-content">
-    {{ content }}
-  </main>
+  <!-- Main Content with Textured Border Frame -->
+  <div class="content-wrapper">
+    <div class="content-frame">
+      <main class="main-content">
+        {{ content }}
+      </main>
+    </div>
+  </div>
   
   <footer class="main-footer">
     <p>Documentation Renaissance Project - Refactorisation du projet Continent</p>

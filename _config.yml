@@ -21,14 +21,6 @@ navigation:
     url: /INSTALLATION.html
   - title: Fonctionnalités
     url: /features/README.html
-  - title: Guides
-    url: /guides/README.html
-  - title: API
-    url: /api/README.html
-  - title: Architecture
-    url: /architecture/README.html
-  - title: Référence
-    url: /reference/README.html
 
 # Exclude files from processing
 exclude:
