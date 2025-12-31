@@ -1,6 +1,6 @@
 title: "Continent - Renaissance Project Documentation"
 description: "Documentation complète du projet Renaissance, refactorisation du projet Continent"
-baseurl: ""
+baseurl: "/continent-doc"
 url: ""
 
 # Jekyll settings
