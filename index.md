@@ -47,7 +47,7 @@ Documentation complète du projet Renaissance, refactorisation du projet Contine
   
   <div class="feature-grid">
     <div class="feature-item">
-      <a href="{{ '/features/' | relative_url }}">
+      <a href="{{ '/features/README.html' | relative_url }}">
         <span class="file-icon">📋</span>
         <span>Index des Fonctionnalités</span>
       </a>
@@ -188,28 +188,28 @@ Documentation complète du projet Renaissance, refactorisation du projet Contine
   <h2>📖 Guides et Références</h2>
   <ul>
     <li>
-      <a href="{{ '/guides/' | relative_url }}">
+      <a href="{{ '/guides/README.html' | relative_url }}">
         <span class="file-icon">📚</span>
         <span>guides/README.md</span>
       </a>
       <div class="description">Guides utilisateur et développeur</div>
     </li>
     <li>
-      <a href="{{ '/reference/' | relative_url }}">
+      <a href="{{ '/reference/README.html' | relative_url }}">
         <span class="file-icon">📖</span>
         <span>reference/README.md</span>
       </a>
       <div class="description">Documentation de référence</div>
     </li>
     <li>
-      <a href="{{ '/api/' | relative_url }}">
+      <a href="{{ '/api/README.html' | relative_url }}">
         <span class="file-icon">🔌</span>
         <span>api/README.md</span>
       </a>
       <div class="description">Documentation de l'API</div>
     </li>
     <li>
-      <a href="{{ '/architecture/' | relative_url }}">
+      <a href="{{ '/architecture/README.html' | relative_url }}">
         <span class="file-icon">🏛️</span>
         <span>architecture/README.md</span>
       </a>

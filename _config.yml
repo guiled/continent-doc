@@ -20,15 +20,15 @@ navigation:
   - title: Installation
     url: /INSTALLATION.html
   - title: Fonctionnalités
-    url: /features/
+    url: /features/README.html
   - title: Guides
-    url: /guides/
+    url: /guides/README.html
   - title: API
-    url: /api/
+    url: /api/README.html
   - title: Architecture
-    url: /architecture/
+    url: /architecture/README.html
   - title: Référence
-    url: /reference/
+    url: /reference/README.html
 
 # Exclude files from processing
 exclude:
