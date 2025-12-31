@@ -1,3 +1,10 @@
+---
+layout: default
+title: Feudalism & Vassalage
+parent: Features
+nav_order: 8
+---
+
 # Feudalism & Vassalage
 
 ## Overview

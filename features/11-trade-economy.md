@@ -1,3 +1,10 @@
+---
+layout: default
+title: Trade & Economy
+parent: Features
+nav_order: 11
+---
+
 # Trade & Economy
 
 ## Overview

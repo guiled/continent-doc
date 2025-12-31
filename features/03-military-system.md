@@ -1,3 +1,10 @@
+---
+layout: default
+title: Military System
+parent: Features
+nav_order: 3
+---
+
 # Military System
 
 ## Overview

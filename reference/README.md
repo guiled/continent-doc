@@ -1,3 +1,8 @@
+---
+layout: default
+title: Reference Documentation
+---
+
 # Reference Documentation
 
 This directory contains reference documentation for the Renaissance project.

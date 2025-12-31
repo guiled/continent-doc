@@ -1,3 +1,9 @@
+---
+layout: default
+title: Feature Documentation Index
+parent: Features
+---
+
 # Feature Documentation Index
 
 This directory contains comprehensive documentation for all features in the Renaissance project. Each document describes features from a functional and business rule perspective, focusing on what the system needs to support rather than current implementation details.

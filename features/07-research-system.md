@@ -1,3 +1,10 @@
+---
+layout: default
+title: Research System
+parent: Features
+nav_order: 7
+---
+
 # Research System
 
 ## Overview

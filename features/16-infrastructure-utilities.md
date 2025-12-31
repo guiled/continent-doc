@@ -1,3 +1,10 @@
+---
+layout: default
+title: Infrastructure & Utilities
+parent: Features
+nav_order: 16
+---
+
 # Infrastructure & Utilities
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Heroes System
+parent: Features
+nav_order: 13
+---
+
 # Heroes System
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Guides
+---
+
 # Guides
 
 This directory contains user and developer guides for the Renaissance project.

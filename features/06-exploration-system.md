@@ -1,3 +1,10 @@
+---
+layout: default
+title: Exploration System
+parent: Features
+nav_order: 6
+---
+
 # Exploration System
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Naval System
+parent: Features
+nav_order: 12
+---
+
 # Naval System
 
 ## Overview

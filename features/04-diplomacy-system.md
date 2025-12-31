@@ -1,3 +1,10 @@
+---
+layout: default
+title: Diplomacy System
+parent: Features
+nav_order: 4
+---
+
 # Diplomacy System
 
 ## Overview

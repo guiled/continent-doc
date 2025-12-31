@@ -1,3 +1,8 @@
+---
+layout: default
+title: API Documentation
+---
+
 # API Documentation
 
 This directory contains API documentation for the Renaissance project.

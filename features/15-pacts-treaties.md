@@ -1,3 +1,10 @@
+---
+layout: default
+title: Pacts & Treaties
+parent: Features
+nav_order: 15
+---
+
 # Pacts & Treaties
 
 ## Overview

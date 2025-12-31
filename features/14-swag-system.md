@@ -1,3 +1,10 @@
+---
+layout: default
+title: Swag System
+parent: Features
+nav_order: 14
+---
+
 # Swag System
 
 ## Overview

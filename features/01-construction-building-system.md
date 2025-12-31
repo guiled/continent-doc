@@ -1,3 +1,10 @@
+---
+layout: default
+title: Construction & Building System
+parent: Features
+nav_order: 1
+---
+
 # Construction & Building System
 
 ## Overview

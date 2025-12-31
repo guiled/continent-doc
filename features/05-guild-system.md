@@ -1,3 +1,10 @@
+---
+layout: default
+title: Guild System
+parent: Features
+nav_order: 5
+---
+
 # Guild System
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Features Implementation Checklist
+---
+
 # Features Implementation Checklist
 
 This document tracks the implementation status of all features extracted from the Continent project in the Renaissance codebase.

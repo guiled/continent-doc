@@ -1,3 +1,10 @@
+---
+layout: default
+title: Events & Random Events
+parent: Features
+nav_order: 9
+---
+
 # Events & Random Events
 
 ## Overview

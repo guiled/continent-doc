@@ -1,3 +1,8 @@
+---
+layout: default
+title: Features Extracted from Continent Project
+---
+
 # Features Extracted from Continent Project
 
 This document lists all features identified in the Continent codebase that are being refactored into the Renaissance project.

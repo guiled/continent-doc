@@ -1,0 +1,49 @@
+title: "Continent - Renaissance Project Documentation"
+description: "Documentation complète du projet Renaissance, refactorisation du projet Continent"
+baseurl: ""
+url: ""
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+navigation:
+  - title: Accueil
+    url: /
+  - title: Installation
+    url: /INSTALLATION.html
+  - title: Fonctionnalités
+    url: /features/
+  - title: Guides
+    url: /guides/
+  - title: API
+    url: /api/
+  - title: Architecture
+    url: /architecture/
+  - title: Référence
+    url: /reference/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+

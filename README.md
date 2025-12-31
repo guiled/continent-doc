@@ -1,3 +1,8 @@
+---
+layout: default
+title: Renaissance Project Documentation
+---
+
 # Renaissance Project Documentation
 
 This directory contains documentation for the Renaissance project. Documentation files are organized by topic and will be created based on explanations provided and codebase analysis.
