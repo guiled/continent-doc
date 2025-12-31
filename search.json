@@ -1,0 +1,16 @@
+---
+---
+[
+  {% assign first = true %}
+  {% for page in site.pages %}
+    {% unless page.url contains '/assets/' or page.url contains '.json' or page.url == '/search.json' %}
+    {% unless first %},{% endunless %}{% assign first = false %}
+    {
+      "title": "{{ page.title | escape }}",
+      "url": "{{ page.url | relative_url }}",
+      "content": {{ page.content | strip_html | strip_newlines | jsonify }}
+    }
+    {% endunless %}
+  {% endfor %}
+]
+

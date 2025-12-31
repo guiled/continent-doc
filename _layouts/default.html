@@ -22,6 +22,10 @@
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% endfor %}
       </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher..." />
+        <ul id="search-results"></ul>
+      </div>
     </div>
   </nav>
   
@@ -37,6 +41,40 @@
   <footer class="main-footer">
     <p>Documentation Renaissance Project - Refactorisation du projet Continent</p>
   </footer>
+
+  <!-- SimpleJekyllSearch -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchInput = document.getElementById('search-input');
+    var searchResults = document.getElementById('search-results');
+    
+    SimpleJekyllSearch({
+      searchInput: searchInput,
+      resultsContainer: searchResults,
+      json: '{{ "/search.json" | relative_url }}',
+      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+      noResultsText: '<li style="padding: 10px; color: #666;">Aucun résultat trouvé</li>',
+      limit: 10,
+      fuzzy: true,
+      exclude: ['search.json']
+    });
+    
+    // Show/hide results container
+    searchInput.addEventListener('input', function() {
+      if (this.value.length > 0) {
+        searchResults.classList.add('show');
+      } else {
+        searchResults.classList.remove('show');
+      }
+    });
+    
+    // Hide results when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('.search-container')) {
+        searchResults.classList.remove('show');
+      }
+    });
+  </script>
 </body>
 </html>
 
